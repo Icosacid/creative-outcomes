@@ -30,9 +30,16 @@ ctx.closePath()
 // Draw a second line
 
 // Draw a circle
-ctx.beginPath()
-ctx.arc(300, 400, 30, 0, 2 * Math.PI, false)
-ctx.stroke()
 ctx.fillStyle = 'red'
-ctx.fill()
-ctx.closePath()
+
+for (let i = 0; i < 20; i++) {
+	ctx.beginPath()
+	ctx.arc(300, i * 20, 30, 0, 2 * Math.PI, false)
+	ctx.stroke()
+	ctx.fill()
+	ctx.closePath()
+}
+
+
+
+
