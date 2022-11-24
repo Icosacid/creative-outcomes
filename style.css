@@ -26,3 +26,13 @@ body {
 	right: 60%;
 	bottom: 60%;
   }
+
+  .water1 {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	opacity: 0.3;
+	background-color: rgb(31, 52, 153);
+	right: 60%;
+	bottom: 60%;
+  }
