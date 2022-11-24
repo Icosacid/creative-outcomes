@@ -9,8 +9,8 @@ body {
 
 
 canvas {
-width  50%;
-height: 500px;
+width : 80% ;
+height: 60%;
 background : blue;
 position: absolute;
 margin: auto;
@@ -18,7 +18,7 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-border-style: groove;
+border-style : linear;
 border-color: rgb(38, 120, 203);
 border-width: 20px;
 }
