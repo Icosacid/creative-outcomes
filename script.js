@@ -11,7 +11,7 @@ let ctx = myCanvas.getContext('2d')
 
 ctx.strokeStyle = "#FFFFFF"
 ctx.fillStyle = "hsl(200, 50%, 60%)"
-ctx.lineWidth = 1
+ctx.lineWidth = 3
 
 // Draw a line
 ctx.beginPath()
@@ -29,6 +29,10 @@ ctx.closePath()
 
 // Draw a second line
 
-
-
-
+// Draw a circle
+ctx.beginPath()
+ctx.arc(300, 400, 30, 0, 2 * Math.PI, false)
+ctx.stroke()
+ctx.fillStyle = 'red'
+ctx.fill()
+ctx.closePath()
