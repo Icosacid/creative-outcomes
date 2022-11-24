@@ -7,3 +7,12 @@ body {
 	overflow: hidden;
 }
 
+.fire {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	opacity: 0.5;
+	background: black;
+	right: 50%;
+	bottom: 50%;
+  }
