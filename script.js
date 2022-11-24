@@ -9,6 +9,7 @@ console.log (myCanvas)
 
 let ctx = myCanvas.getContext('2d')
 
+/* remplir une forme*/
 ctx.strokeStyle = "black"
 ctx.fillStyle = "#6CB493"
 
@@ -56,12 +57,16 @@ ctx.stroke()
 
 ctx.closePath()
 
+
+
+for (let i = 0; i <20; i++){
 // Dessiner un cercle 
 ctx.beginPath()
-ctx.arc(300, 400, 100, 0, 2 * Math.PI, false) // Coordonnée du centre, coordonée du centre , dimention du diameètre, Cercle fermé 
-ctx.fillStyle = "pink"
-ctx.strokeStyle = "pink"
-ctx.lineWidth = 15
+ctx.arc(200, i * 50, 80, 0, 2 * Math.PI, false) // Coordonnée du centre, coordonée du centre , dimention du diameètre, Cercle fermé 
+ctx.fillStyle = "#6CB493"
+ctx.strokeStyle = "white"
+ctx.lineWidth = 10
 ctx.closePath()
 ctx.fill()
 ctx.stroke()
+}
