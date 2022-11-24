@@ -28,8 +28,8 @@ body {
   }
 
   .water1 {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 30px;
 	position: absolute;
 	opacity: 0.3;
 	background-color: rgb(31, 52, 153);
