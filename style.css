@@ -16,3 +16,13 @@ body {
 	right: 50%;
 	bottom: 50%;
   }
+
+  .water {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	opacity: 0.3;
+	background-color: aqua;
+	right: 60%;
+	bottom: 60%;
+  }
