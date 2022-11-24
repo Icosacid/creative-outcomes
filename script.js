@@ -27,5 +27,12 @@ ctx.beginPath()
 ctx.rect(100, 50, 30, 20)
 ctx.fill()
 ctx.stroke()
-
 ctx.closePath ()
+
+// dessiner un cercle
+ctx.beginPath()
+ctx.arc(300, 400, 30, 0, 2 * Math.PI, false);
+ctx.stroke ()
+ctx.closePath()
+ctx.fillStyle = "black";
+ctx.fill()
