@@ -10,7 +10,7 @@ console.log (myCanvas)
 let ctx = myCanvas.getContext('2d')
 
 ctx.strokeStyle = "black"
-ctx.fillStyle = "hsl(200, 50%, 60%)"
+ctx.fillStyle = "#6CB493"
 
 ctx.lineWidth = 1
 
@@ -38,6 +38,18 @@ ctx.stroke()
 /* Desinner un rectangle*/
 ctx.beginPath()
 ctx.rect(500, 500, 300, 200)
+
+ctx.fill()
+ctx.stroke()
+
+ctx.closePath()
+
+
+ctx.fillStyle = "black"
+
+/* Desinner un deuxième rectangle*/
+ctx.beginPath()
+ctx.rect(400, 600, 300, 200)
 
 ctx.fill()
 ctx.stroke()
