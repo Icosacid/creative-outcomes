@@ -16,7 +16,7 @@ ctx.strokeStyle = "white"
 ctx.fillStyle = "hsl(200, 50%, 60%)"
 
 /*epaisseur de la ligne*/
-ctx.lineWidth = 6
+ctx.lineWidth = 3
 
 /*dessiner une ligne*/
 ctx.beginPath()
@@ -45,6 +45,16 @@ ctx.closePath()
 /*dessiner un rectangle*/
 ctx.beginPath()
 ctx.rect(20, 30, 10, 90)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+
+/*couleur pour remplir forme*/
+ctx.fillStyle = "hsl(100, 50%, 60%)"
+
+/* dessiner un cercle*/
+ctx.beginPath()
+ctx.arc(200, 300, 100, 0, 2 * Math.PI, false)
 ctx.fill()
 ctx.stroke()
 ctx.closePath()
