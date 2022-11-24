@@ -7,3 +7,11 @@ body {
 	overflow: hidden;
 }
 
+div {
+  background: radial-gradient(ellipse 90% 100px, blue 10%, #02ccec 60%, white);
+  margin: 5px;
+  text-align: center;
+  border-radius: 50%;
+  width:160px;
+  height:160px;
+}
