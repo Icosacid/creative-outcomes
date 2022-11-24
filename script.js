@@ -1,3 +1,2 @@
-console.log('div');
-var alice= document.getElementsByClassName("fire");
-alice.style.borderRadius= "60%";
+var alice = document.getElementsByClassName("fire")[0];
+alice.style.borderRadius= "10%";

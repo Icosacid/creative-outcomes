@@ -12,7 +12,7 @@ body {
 	width: 100px;
 	position: absolute;
 	opacity: 0.5;
-	background: black;
+	background: rgba(25, 120, 87, 0.712);
 	right: 50%;
 	bottom: 50%;
   }
