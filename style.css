@@ -5,29 +5,20 @@ body {
 	margin: 0;
 	border: none;
 	overflow: hidden;
-  background : blue;
 }
 
-.forme1 {
-  background: radial-gradient(ellipse 90% 100px, blue 10%, #02ccec 60%, white);
-  margin: 5px;
-  text-align: center;
-  border-radius: 50%;
-  width:160px;
-  height:160px;
-}
-
-.forme2 {
-  background: white;
-  margin: 5px;
-  text-align: center;
-  border-radius: 50% ;
-  width:160px;
-  height:160px;
-}
 
 canvas {
-width : 500px;
-height : 300px;
-background :white;
+width  50%;
+height: 500px;
+background : blue;
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+border-style: groove;
+border-color: rgb(38, 120, 203);
+border-width: 20px;
 }
