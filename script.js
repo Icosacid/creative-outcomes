@@ -17,7 +17,7 @@ ctx.fillStyle = "black";
 ctx.lineWidth = 1
 // ceci est pour définir comment va bouger notre pinceau
 ctx.beginPath()
-ctx.moveTo(200, 50 * Math.random());
+ctx.moveTo(200, 50, 100);
 ctx.lineTo(100, 160);
 ctx.closePath ()
 ctx.stroke()
