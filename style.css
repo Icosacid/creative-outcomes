@@ -5,10 +5,17 @@ body {
 	margin: 0;
 	border: none;
 	overflow: hidden;
+	background-color: black;
 }
 
 #shape {
 	background: chocolate;
 	width: 200px;
 	height: 200px;
+}
+
+canvas {
+	width: 500px;
+	height: 300px;
+	background-color: white;
 }
