@@ -55,3 +55,13 @@ ctx.fill()
 ctx.stroke()
 
 ctx.closePath()
+
+// Dessiner un cercle 
+ctx.beginPath()
+ctx.arc(300, 400, 100, 0, 2 * Math.PI, false) // Coordonnée du centre, coordonée du centre , dimention du diameètre, Cercle fermé 
+ctx.fillStyle = "pink"
+ctx.strokeStyle = "pink"
+ctx.lineWidth = 15
+ctx.closePath()
+ctx.fill()
+ctx.stroke()
