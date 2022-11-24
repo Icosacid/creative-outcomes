@@ -16,6 +16,6 @@ body {
 	bottom: 25%;
 	left: 0; 
 	right: 0;
-	border: groove;
+	border-radius: 10px;
 
   }
