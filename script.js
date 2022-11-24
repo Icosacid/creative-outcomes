@@ -1,13 +1,13 @@
 console.log('Hello there!');
 
-// Je crée une varaible avec let ou var 
+// Je crï¿½e une varaible avec let ou var 
 let myCanvas;
 
-// Je définis mon canvas en allant chercher l'élement par son tag.
+// Je dï¿½finis mon canvas en allant chercher l'ï¿½lement par son tag.
 // Il s'agit du premier tag donc = [0]
 myCanvas = document.getElementsByTagName('canvas')[0]
 
-//Définition de la taille du canvas
+//Dï¿½finition de la taille du canvas
 myCanvas.width = window.innerWidth
 myCanvas.height = window.innerHeight
 
@@ -16,12 +16,12 @@ let ctx = myCanvas.getContext('2d')
 
 
 
-//Définition d'une ligne grace aux coordonnée X et Y pour créer un segment
+//Dï¿½finition d'une ligne grace aux coordonnï¿½e X et Y pour crï¿½er un segment
 ctx.strokeStyle = "#ffffff"// Affecter une couleur de la ligne
 ctx.lineWidth = 2 //Epaisseur de la ligne 
 ctx.fillStyle = "#ffffff" //Couleur du remplissage 
 //Commencer
-ctx.beginPath()//On appelle la méthode, la fonction avec les ()
+ctx.beginPath()//On appelle la mï¿½thode, la fonction avec les ()
 //Tracer x to y
 ctx.moveTo(650, 590)
 ctx.lineTo(450, 400)
@@ -51,6 +51,36 @@ ctx.stroke()
 
 ctx.beginPath()
 ctx.rect(600, 400, 400, 100)
+ctx.closePath()
+ctx.stroke()
+ctx.fill()
+
+// Dessiner un cercle
+//coin haut gauche
+ctx.beginPath()
+ctx.arc(220, 250, 30, 0, 2 * Math.PI, false)
+ctx.closePath()
+ctx.stroke()
+ctx.fill()
+
+// autre coins du carrÃ© :)
+// coin haut droite
+ctx.beginPath()
+ctx.arc(440, 250, 30, 0, 2 * Math.PI, false)
+ctx.closePath()
+ctx.stroke()
+ctx.fill()
+
+// coin bas droite
+ctx.beginPath()
+ctx.arc(440, 500, 30, 0, 2 * Math.PI, false)
+ctx.closePath()
+ctx.stroke()
+ctx.fill()
+
+// coin bas gauche
+ctx.beginPath()
+ctx.arc(220, 500, 30, 0, 2 * Math.PI, false)
 ctx.closePath()
 ctx.stroke()
 ctx.fill()
