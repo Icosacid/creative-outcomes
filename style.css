@@ -2,8 +2,16 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	margin: 0;
+	margin-left: 15px;
 	border: none;
 	overflow: hidden;
 }
 
+#circle{
+	background-color: #145d3d; 
+	border-radius: 100px; 
+	width: 100px; 
+	height: 100px; 
+	position: absolute;
+	left: 250px;
+}
