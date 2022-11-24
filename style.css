@@ -5,17 +5,5 @@ body {
 	margin: 0;
 	border: none;
 	overflow: hidden;
+	background: white;
 }
-
-  canvas {
-	width: 500px;
-	height: 300px;
-	background-color: rgb(167, 132, 201);
-	margin: 0px auto;
-	position: absolute;
-	bottom: 25%;
-	left: 0; 
-	right: 0;
-	border-radius: 10px;
-
-  }

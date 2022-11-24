@@ -3,18 +3,28 @@ alice.style.borderRadius= "10%";
 var marine = document.getElementsByClassName("water") [0];
 marine.style.borderRadius= "80%";
 
-let mycanvas;
-mycanvas = document.getElementsByTagName("canvas")[0];
-let ctx = mycanvas.getContext ("2d")
+let myCanvas;
+myCanvas = document.getElementsByTagName("canvas")[0];
+myCanvas.width = window.innerWidth 
+myCanvas.height = window.innerHeight
+
+
+let ctx = myCanvas.getContext("2d")
 
 ctx.strokeStyle = "black";
+ctx.fillStyle = "black";
+ctx.lineWidth = 1
 // ceci est pour définir comment va bouger notre pinceau
 ctx.beginPath()
-ctx.moveTo(20, 50 * Math.random ());
-ctx.lineTo(100, 60);
+ctx.moveTo(200, 50 * Math.random());
+ctx.lineTo(100, 160);
+ctx.closePath ()
+ctx.stroke()
+
+// dessiner un rectangle
+ctx.beginPath()
+ctx.rect(100, 50, 30, 20)
+ctx.fill()
+ctx.stroke()
 
 ctx.closePath ()
-
-// pour qu'il dessine 
-
-ctx.stroke()
