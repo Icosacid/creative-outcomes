@@ -9,13 +9,5 @@ body {
 }
 
   canvas {
-	width: 700px;
-	height: 500px;
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	background: #ffffff;
+	background: #000000;
   }
