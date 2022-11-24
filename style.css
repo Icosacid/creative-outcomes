@@ -9,30 +9,7 @@ body {
 
 }
 
-.rond {
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  position: relative;   
-}
 
-#a {
-  background: radial-gradient(ellipse 90% 100px, rgb(97, 6, 18) 10%, #d8445d 60%, white);
-  top: 50px;
-  left: 300px;
-  height: 210px;
-  width: 210px;
-  
-}
-
-
-p {
-  color: white;
-  position: absolute;
-  top: 50px; left: 318px;
-  font-size: 90px; 
-
-}
 
 
 canvas {
