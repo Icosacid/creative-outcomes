@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	border: none;
 	overflow: hidden;
-  background: #CEA197;
+  background: white;
 
 }
 
@@ -13,6 +13,9 @@ body {
 
 
 canvas {
-  background: white;
-
-}
+	width : 500px ;
+	height: 500px;
+	background : black;
+	position: absolute;
+	margin: 10%;
+	}
