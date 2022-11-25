@@ -18,8 +18,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Mercure
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "brown"
+ctx.fillStyle= "brown"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -27,8 +27,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Venus
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "orange"
+ctx.fillStyle= "orange"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -36,8 +36,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Terre
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "green"
+ctx.fillStyle= "green"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -45,8 +45,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Mars
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "red"
+ctx.fillStyle= "red"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -54,8 +54,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Jupiter
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "cream"
+ctx.fillStyle= "cream"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -63,8 +63,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Saturne
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "grey"
+ctx.fillStyle= "grey"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -72,8 +72,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Uranus
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "cyan"
+ctx.fillStyle= "cyan"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -81,8 +81,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Neptune
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "blue"
+ctx.fillStyle= "blue"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
@@ -90,8 +90,8 @@ ctx.stroke ()
 ctx.closePath ()
 
 //Soleil
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
+ctx.strokeStyle= "yellow"
+ctx.fillStyle= "yellow"
 ctx.beginPath ()
 ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
