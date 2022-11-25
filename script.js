@@ -28,6 +28,11 @@ ctx.strokeStyle = "#ffffe0"; //couleur contour toile
 ctx.fillStyle = '#ffffe0'; //Couleur fond de toile
 ctx.fillRect(200, 100, 600, 400);
 
+// Fonction dessiner
+strokeWeight(33);
+stroke(250, 0, 242);
+line(83, 116, 271, 74);
+
 
 
 
