@@ -11,8 +11,17 @@ let ctx = myCanvas.getContext('2d')
 
 ctx.strokeStyle = "white"
 ctx.fillStyle = "white"
+ctx.globalCompositeOperation = 'lighter'
 ctx.linewidth = 1
 
+for (let i = 0; i <100; i++){
+    ctx.beginPath()
+    ctx.moveTo(0, i*15)
+    ctx.lineTo(350, i*15)
+    ctx.stroke()
+    ctx.closePath()
+    }
+    
 
  // Triangle plein
  ctx.beginPath();
@@ -76,15 +85,6 @@ ctx.moveTo(175, 525)
 ctx.lineTo(350, 350)
 ctx.stroke()
 ctx.closePath()
-
-
-
-
-
-
-
-
-
 
 
 
