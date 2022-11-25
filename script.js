@@ -90,4 +90,9 @@ ctx.stroke()
 ctx.closePath()
 
 
-
+/*for (let i = 0; i < 30; i++) {
+    ctx.lineTo(100 + 5 * i, 120 + 10 * (Math.random() < 0.5) * i)
+  }
+  
+  ctx.stroke()
+  ctx.closePath()*/
