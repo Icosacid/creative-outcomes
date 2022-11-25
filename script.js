@@ -9,8 +9,19 @@ console.log (myCanvas)
 
 let ctx = myCanvas.getContext('2d')
 
+ctx.strokeStyle = "white"
+ctx.fillStyle = "white"
+ctx.linewidth = 1
 
 
+ // Triangle plein
+ ctx.beginPath();
+ ctx.moveTo(320, 320);
+ ctx.lineTo(320, 0);
+ ctx.lineTo(230, 150);
+ ctx.fill();
+ 
+ ctx.closePath();
 
 
 
