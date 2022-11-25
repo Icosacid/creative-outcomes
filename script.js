@@ -16,32 +16,32 @@ ctx.linewidth = 1
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(320, 320);
- ctx.lineTo(320, 0);
+ ctx.moveTo(307, 307);
+ ctx.lineTo(307, 0);
  ctx.lineTo(250, 80);
  ctx.fill();
  ctx.closePath();
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(320, 320);
- ctx.lineTo(0, 320);
+ ctx.moveTo(307, 307);
+ ctx.lineTo(0, 307);
  ctx.lineTo(80, 250);
  ctx.fill();
  ctx.closePath();
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(320, 320);
- ctx.lineTo(0, 320);
- ctx.lineTo(80, 400);
+ ctx.moveTo(307, 307);
+ ctx.lineTo(0, 307);
+ ctx.lineTo(80, 370);
  ctx.fill();
  ctx.closePath();
 
 // Triangle plein
 ctx.beginPath();
-ctx.moveTo(320, 320);
-ctx.lineTo(320, 614);
+ctx.moveTo(307, 307);
+ctx.lineTo(307, 614);
 ctx.lineTo(250, 530);
 ctx.fill();
 ctx.closePath();
