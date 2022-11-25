@@ -171,4 +171,5 @@ for (let i= 0; i < 11; i++) {
   ctx.arc(170, 300, i * 130, 0, 2 * Math.PI, false)
   ctx.stroke()
   ctx.closePath()
- }
+}
+  
