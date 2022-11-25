@@ -48,6 +48,22 @@ ctx.closePath();
 
 
 
+/*Première ligne du triangle du haut*/
+ctx.beginPath()
+ctx.moveTo(270, 80 )
+ctx.lineTo(80, 270)
+ctx.stroke()
+ctx.closePath()
+
+
+/*Deuxième lign du triangle du haut*/
+ctx.beginPath()
+ctx.moveTo(175, 175)
+ctx.lineTo(350, 350)
+ctx.stroke()
+ctx.closePath()
+
+
 
 
 
