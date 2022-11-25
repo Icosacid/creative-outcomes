@@ -35,7 +35,7 @@ function curve() {
     
 }
 curve()
-cercles();
+
 =======
 createAllCercles();
 >>>>>>> Stashed changes
