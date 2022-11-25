@@ -13,6 +13,7 @@ ctx.strokeStyle = "white"
 ctx.fillStyle = "white"
 ctx.linewidth = 1
 
+
 for (let i = 47; i <100; i++){
     ctx.beginPath()
     ctx.moveTo(0, i*7.5)
@@ -53,13 +54,15 @@ ctx.lineTo(270, 620);
 ctx.fill();
 ctx.closePath();
 
-// Triangle contour blanc
+// Triangle blanc
 ctx.beginPath();
 ctx.moveTo(0, 0);
 ctx.lineTo(270, 80);
 ctx.lineTo(80, 270);
 ctx.fill();
 ctx.closePath();
+
+
 
 /*Première ligne du triangle du haut*/
 ctx.beginPath()
