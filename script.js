@@ -16,8 +16,9 @@ cercles();
 // Cercles Marine
 function cercles() {
 
-    var items = 20;
-    var r = 50;
+    var items = 84;
+    var r = 70;
+    var cercleSize = 0.125;
 
     for(var i = 0; i < items; i++) {
     
@@ -27,7 +28,17 @@ function cercles() {
         ctx.beginPath();
         ctx.lineWidth="2";
         ctx.fillStyle="#FF4422"
-        ctx.arc(x, y, 5, 0, 2 * Math.PI);
+        ctx.arc(x, y, cercleSize, 0, 2 * Math.PI);
         ctx.fill();
+
+        // changement de taille du cercle
+        console.log(cercleSize);
+        if (cercleSize <= 2.625) {
+            cercleSize+= 0.125;
+        }
+        else cercleSize = 0.125;
+        
+
+        
     }
 }
