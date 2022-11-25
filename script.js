@@ -10,7 +10,61 @@ let w = myCanvas.width,
     centerX = w / 2,
     centerY = h / 2
 
+//Roselyne 
 
+function curve() {
+    ctx.strokeStyle = "#0D47A1"
+    ctx.lineWidth = 5
+    ctx.fillStyle = "#0D47A1"
+
+
+    ctx.beginPath()
+    ctx.moveTo(0, 0)
+    ctx.quadraticCurveTo(500, 25, 100, 400);
+    ctx.quadraticCurveTo(500, 40, 0, 100);
+    ctx.closePath()
+    ctx.stroke()
+    ctx.fill()
+
+    ctx.fillStyle = "#6200EA"
+    ctx.strokeStyle = "#6200EA"
+    ctx.beginPath()
+    ctx.arc(1400, 700, 300, 0, 2 * Math.PI, false)
+    ctx.closePath()
+    ctx.fill()
+    ctx.stroke()
+
+}
+curve()
+
+function lines() {
+
+
+    for (var i = 0; i < 10; i++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "white"
+        ctx.moveTo(i * 20, 20);
+        ctx.lineWidth = 15;
+        ctx.lineCap = 'round';
+        ctx.lineTo((i * 20) + 2, 20);
+        ctx.stroke();
+    }
+
+
+    ctx.lineWidth = 9
+    ctx.fillStyle = "black"
+    ctx.strokeStyle = "black"
+    ctx.beginPath();
+    ctx.setLineDash([10, 35]);
+    ctx.arc(1400, 700, 200, 0, 2 * Math.PI, false)
+    ctx.closePath()
+    ctx.stroke()
+
+
+
+}
+
+lines()
 
 // --- variables globales de Marine ---
 var nbDeDisques = 10
@@ -36,6 +90,13 @@ function curve() {
     ctx.lineWidth = 5
     ctx.fillStyle = "#0D47A1"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> af2182379d022a2c1a8bf3659c5c50cb723b85c7
+>>>>>>> Stashed changes
     ctx.beginPath()
     ctx.moveTo(0, 0)
     ctx.quadraticCurveTo(500, 25, 100, 400);
@@ -56,7 +117,46 @@ function curve() {
 curve()
 createAllCercles()
 
+<<<<<<< Updated upstream
 
+=======
+
+<<<<<<< HEAD
+function lines() {
+
+    
+   for (var i = 0; i < 10; i++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "white"
+        ctx.moveTo(i*20, 20);
+        ctx.lineWidth = 15;
+        ctx.lineCap = 'round';
+        ctx.lineTo((i*20)+2, 20);
+        ctx.stroke();
+    }
+
+
+    ctx.lineWidth = 9
+    ctx.fillStyle = "black"
+    ctx.strokeStyle = "black"
+    ctx.beginPath();
+    ctx.setLineDash([10, 35]);
+    ctx.arc(1400, 700, 200, 0, 2 * Math.PI, false)
+    ctx.closePath()
+    ctx.stroke()
+
+
+    
+}
+
+lines()
+
+
+createAllCercles();
+
+=======
+>>>>>>> af2182379d022a2c1a8bf3659c5c50cb723b85c7
+>>>>>>> Stashed changes
 
 // Cercles Marine
 function createAllCercles() {
@@ -71,9 +171,15 @@ function createAllCercles() {
     }
     
 }
+<<<<<<< Updated upstream
 
 function drawCercle() {
 
+=======
+
+function drawCercle() {
+
+>>>>>>> Stashed changes
     // faire un disque
     for(var i = 0; i < items; i++) {
     
