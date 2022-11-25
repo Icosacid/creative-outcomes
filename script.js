@@ -31,8 +31,9 @@ function curve() {
     ctx.closePath()
     ctx.stroke()
     ctx.fill()
-    curve()
-
+    
+}
+curve()
 cercles();
 
 // Cercles Marine
