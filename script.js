@@ -11,7 +11,6 @@ let ctx = myCanvas.getContext('2d')
 
 ctx.strokeStyle = "white"
 ctx.fillStyle = "white"
-ctx.globalCompositeOperation = 'lighter'
 ctx.linewidth = 1
 
 for (let i = 47; i <100; i++){
@@ -21,8 +20,6 @@ for (let i = 47; i <100; i++){
     ctx.stroke()
     ctx.closePath()
 }
-
-
 
 
  // Triangle plein
@@ -59,6 +56,16 @@ ctx.closePath();
 
 
 
+// Triangle contour blanc
+ctx.beginPath();
+ctx.moveTo(0, 0);
+ctx.lineTo(270, 80);
+ctx.lineTo(80, 270);
+ctx.fill();
+ctx.closePath();
+
+
+
 /*Première ligne du triangle du haut*/
 ctx.beginPath()
 ctx.moveTo(270, 80 )
@@ -66,7 +73,7 @@ ctx.lineTo(80, 270)
 ctx.stroke()
 ctx.closePath()
 
-/*Deuxième lign du triangle du haut*/
+/*Deuxième ligne du triangle du haut*/
 ctx.beginPath()
 ctx.moveTo(175, 175)
 ctx.lineTo(350, 350)
@@ -74,14 +81,14 @@ ctx.stroke()
 ctx.closePath()
 
 
-/*Première lign du triangle du bas*/
+/*Première ligne du triangle du bas*/
 ctx.beginPath()
 ctx.moveTo(80, 430)
 ctx.lineTo(270, 620)
 ctx.stroke()
 ctx.closePath()
 
-/*Deuxième lign du triangle du bas*/
+/*Deuxième ligne du triangle du bas*/
 ctx.beginPath()
 ctx.moveTo(175, 525)
 ctx.lineTo(350, 350)
@@ -89,8 +96,13 @@ ctx.stroke()
 ctx.closePath()
 
 
-
-
+ctx.strokeStyle = "black"
+/*ligne noir du triangle blanc*/
+ctx.beginPath()
+ctx.moveTo(0, 0)
+ctx.lineTo(175, 175)
+ctx.stroke()
+ctx.closePath()
 
 
 
