@@ -8,14 +8,15 @@ myCanvas.height = window.innerHeight
 
 let ctx = myCanvas.getContext('2d')
 
+
 //création planetes
-ctx.strokeStyle= "black"
-ctx.fillStyle= "black"
-ctx.beginPath ()
-ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
-ctx.fill ()
-ctx.stroke ()
-ctx.closePath ()
+
+for (var i= 0; i < 8; i++) {
+  context.beginPath();
+  context.lineWidth="1";
+  context.arc(100, 100, i * 2, 0, 2 * Math.PI);
+  context.stroke();
+ }
 
 //Mercure
 ctx.strokeStyle= "brown"
@@ -97,3 +98,4 @@ ctx.arc (1000, 300, 150, 0, 2 * Math.PI, false)
 ctx.fill ()
 ctx.stroke ()
 ctx.closePath ()
+
