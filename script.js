@@ -64,27 +64,30 @@ function curve() {
 curve()
 
 
-var delay = 1000;
-var max = 10;
+var delay = 50;
+var max = 55;
 var i = 0
-function Loop() {
+
+
+
+for (var ordonnee = 0; ordonnee < 10; ordonnee+=2) {
+
+    console.log("ordonnee: " + ordonnee)
+    //Loop(ordonnee)
+}
+
+
+
+
+function Loop(ordonnee) {
     setTimeout(function () {
         ctx.beginPath();
         ctx.strokeStyle = "white"
-        ctx.moveTo(i * 20, 20);
-        ctx.lineWidth = 15;
-        ctx.lineCap = 'round';
-        ctx.lineTo((i * 20) + 2, 20);
+        ctx.moveTo(i * 10, ordonnee);
+        ctx.lineWidth = 2;
+        ctx.lineTo(i * 10 +10, ordonnee);
         ctx.stroke();
-
-        ctx.beginPath();
-        ctx.strokeStyle = "white"
-        ctx.moveTo(i * 50, 50);
-        ctx.lineWidth = 15;
-        ctx.lineCap = 'round';
-        ctx.lineTo((i * 50) + 2, 50);
-        ctx.stroke();
-
+        
         i++;
 
         if (i < max) {
@@ -92,28 +95,7 @@ function Loop() {
         }
     }, delay)
 }
-Loop()
 
-function Looping() {
-    setTimeout(function () {
-        ctx.lineWidth = 9
-        ctx.fillStyle = "black"
-        ctx.strokeStyle = "black"
-        ctx.beginPath()
-        ctx.setLineDash(10, 35);
-        ctx.arc(1400, 700, 200, 0, 2 * Math.PI, false)
-        ctx.closePath()
-        ctx.stroke()
-        ctx.fill()
-
-        i++;
-        if (i < max) {
-            Looping();
-        }
-    }, delay)
-
-}
-Looping()
 
 
 
