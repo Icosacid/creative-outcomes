@@ -1,29 +1,24 @@
 let myCanvas
 myCanvas = document.getElementsByTagName('canvas')[0]
 let ctx = myCanvas.getContext('2d')
-ctx.strokeStyle = "#000000"
-ctx.lineWidth= 1
 
-ctx.beginPath()
-ctx.moveTo(10, 10)
-ctx.lineTo(10, 40)
 
-ctx.moveTo(10, 40)
-ctx.lineTo(40, 40)
 
-ctx.moveTo(40, 40)
-ctx.lineTo(40, 10)
 
-ctx.moveTo(40, 10)
-ctx.lineTo(10, 10)
 
-ctx.closePath()
-ctx.stroke()
 
-CartToPol();
 
-function CartToPol(x, y) {
-    var r = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))
 
-    console.log(r)
+function CartToPol(x, y, r, o) {
+
+    r = Math.sqrt(x*x + y*y)
+    o = Math.atan2(y,x) * 180 / Math.PI;
+}
+
+function PolToCart(x, y, r, o) {
+    var x = r * Math.cos(o)
+    var y = r* Math.sin(o)
+
+    console.log(x)
+    console.log(y)
 }
