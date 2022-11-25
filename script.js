@@ -55,7 +55,6 @@ ctx.lineTo(80, 270)
 ctx.stroke()
 ctx.closePath()
 
-
 /*Deuxième lign du triangle du haut*/
 ctx.beginPath()
 ctx.moveTo(175, 175)
@@ -64,8 +63,19 @@ ctx.stroke()
 ctx.closePath()
 
 
+/*Première lign du triangle du bas*/
+ctx.beginPath()
+ctx.moveTo(80, 430)
+ctx.lineTo(270, 620)
+ctx.stroke()
+ctx.closePath()
 
-
+/*Deuxième lign du triangle du bas*/
+ctx.beginPath()
+ctx.moveTo(175, 525)
+ctx.lineTo(350, 350)
+ctx.stroke()
+ctx.closePath()
 
 
 
