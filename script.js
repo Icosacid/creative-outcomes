@@ -106,7 +106,3 @@ ctx.moveTo(525,525);
 ctx.lineTo(700, 700);
 ctx.stroke();
 ctx.closePath;
-
-
-
-
