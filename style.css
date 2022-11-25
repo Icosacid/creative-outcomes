@@ -10,6 +10,7 @@ body {
 
   canvas {
 	background: #000000;
+	position: fixed; touch-action: none;
   }
 
   
