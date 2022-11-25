@@ -23,4 +23,17 @@ ctx.fill()
 ctx.stroke()
 ctx.closePath()
 
+// Création de la toile
+ctx.strokeStyle = "#ffffe0"; //couleur contour toile
+ctx.fillStyle = '#ffffe0'; //Couleur fond de toile
+ctx.fillRect(200, 100, 600, 400);
+
+
+
+
+
+
+
+
+
 
