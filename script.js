@@ -11,6 +11,34 @@ let w = myCanvas.width,
     centerY = h / 2
 
 
+<<<<<<< Updated upstream
+=======
+
+// --- variables globales de Marine ---
+var nbDeDisques = 11
+var maxLine = 21
+var items = maxLine * 4
+    
+var sizeMultiplier = 0.25
+var startSize = sizeMultiplier
+var currentDotSize = sizeMultiplier
+
+var currentDistance = 70
+
+var currentItem = 0
+
+
+var palette1 = ["#4A90E2", "#4D8ADC", "#4F84D6", "#527DD0", "#5477CA", "#5771C5", "#596BBF", "#5C64B9", "#5E5EB3", "#6158AD", "#6352A7", "#664BA1", "#68459B", "#6B3F95", "#6D398F", "#70328A", "#722C84", "#75267E", "#772078", "#7A1972", "#7C136C"]
+var palette2 = ["#E2C14A", "#DFB849", "#DCAE49", "#D9A548", "#D59B47", "#D29246", "#CF8946", "#CC7F45", "#C97644", "#C66C43", "#C36343", "#BF5A42", "#BC5041", "#B94740", "#B63D40", "#B3343F", "#B02B3E", "#AC213D", "#A9183D", "#A60E3C", "#7A1972"]
+var posPalette = 0
+var palettes = [palette1, palette2]
+var chosenPalette
+// -----------------
+
+
+
+
+>>>>>>> Stashed changes
 //Roselyne 
 
 function curve() {
@@ -93,13 +121,20 @@ createAllCercles();
 // Cercles Marine
 function createAllCercles() {
 
+    chosenPalette = paletteSelector(palettes);
+    
     for(var i = 0; i < nbDeDisques; i++) {
         
         console.log("disque " + i + ":")
+        console.log("rayon: " + currentDistance)
         drawCercle();
+
         currentItem++;
-        cercleSize++;
-        r+=100 // distance des disques
+
+        startSize+= sizeMultiplier;
+        currentDotSize += currentDotSize + sizeMultiplier; // taille des points
+
+        currentDistance = currentDistance * 1.14 + 5 // distance des disques
     }
     
 }
@@ -115,12 +150,10 @@ function drawCercle() {
     // faire un disque
     for(var i = 0; i < items; i++) {
     
-        console.log("current item: " + currentItem)
-        console.log("taille du cercle: " + cercleSize)
 
         // calcul de la position
-        var x = centerX + r * Math.cos(2 * Math.PI * i / items);
-        var y = centerY + r * Math.sin(2 * Math.PI * i / items);   
+        var x = centerX + currentDistance * Math.cos(2 * Math.PI * i / items);
+        var y = centerY + currentDistance * Math.sin(2 * Math.PI * i / items);   
         
         // repart au début de la palette
         if (posPalette >= maxLine) 
@@ -129,26 +162,32 @@ function drawCercle() {
         }
 
         // dessin du point
-        drawDot(x, y, cercleSize, palette[posPalette]);
+        drawDot(x, y, currentDotSize, chosenPalette[posPalette]);
         posPalette++;
 
         // changement de taille du point
         if (currentItem < maxLine-1) {
             currentItem++
-            cercleSize+= 0.125
+            currentDotSize += sizeMultiplier
         }
         else {
             currentItem = 0
-            cercleSize = 0.125
+            currentDotSize = startSize
         }
 
     }
 }
 
 
-function drawDot(x, y, cercleSize, couleur) {
+function drawDot(x, y, currentDotSize, couleur) {
     ctx.beginPath();
     ctx.fillStyle = couleur
-    ctx.arc(x, y, cercleSize, 0, 2 * Math.PI);
+    ctx.arc(x, y, currentDotSize, 0, 2 * Math.PI);
     ctx.fill();
+}
+
+// sélectionne une palette de couleur aléatoire
+function paletteSelector (palettes)
+{
+    return palettes[Math.floor(Math.random() * (palettes.length - 0) + 0)];
 }
