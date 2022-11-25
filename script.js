@@ -1,4 +1,4 @@
-/*balise canva*/
+//balise canva
 let myCanvas
 
 myCanvas = document.getElementsByTagName('canvas')[0]
@@ -7,7 +7,6 @@ myCanvas.width = window.innerWidth
 myCanvas.height = window.innerHeight
 
 let ctx = myCanvas.getContext('2d')
-
 
 //création planetes
 
@@ -92,15 +91,84 @@ ctx.fill ()
 ctx.stroke ()
 ctx.closePath ()
 
-//couleur
+//creation etoiles
+
+//couleur du contour de l'étoile
+ctx.strokeStyle = "white"
+
+//couleur de l'étoile
+ctx.fillStyle = "white"
+
+//epaisseur de l'etoile
+ctx.lineWidth = 1
+
+// boucles dessiner les étoiles
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(100, i*269, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(300, i*500, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+     
+for (let i = 0; i < 10; i++) {
+    ctx.beginPath()
+    ctx.arc(500, i*180, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+    
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(700, i*200, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(900, i*300, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(1100, i*150, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(1250, i*300, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+
+//creation des gravitations
+
+//couleur des gravitations
 ctx.strokeStyle= "white"
 
-//Boucle
+//gravitations
 for (let i= 0; i < 8; i++) {
   ctx.beginPath()
   ctx.lineWidth="1"
   ctx.arc(170, 300, i * 120, 0, 2 * Math.PI, false)
   ctx.stroke()
   ctx.closePath()
-
  }
