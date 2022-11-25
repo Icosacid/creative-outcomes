@@ -41,7 +41,7 @@ ctx.beginPath();
     ctx.fill();
     ctx.closePath;
 
-    // triangle du milieu (haut)
+// triangle du milieu (haut)
 
     ctx.beginPath();
     ctx.moveTo(350, 350);
@@ -50,20 +50,30 @@ ctx.beginPath();
     ctx.fill();
     ctx.closePath;
 
-/*
-    //petals triangle 1
-    ctx.beginPath();
-    ctx.moveTo(345, 400);
-    ctx.lineTo(440, 120);
-    ctx.lineTo(600, 310);
-    ctx.stroke();
-    ctx.closePath;
+// trait 1 
+ctx.beginPath();
+ctx.moveTo(430,80);
+ctx.lineTo(620, 270);
+ctx.stroke();
+ctx.closePath;
 
-    //petals triangle 2
-    ctx.beginPath();
-    ctx.moveTo(345, 400);
-    ctx.lineTo(440, 120);
-    ctx.lineTo(600, 310);
-    ctx.stroke();
-    ctx.closePath;
-    */
+// trait perpandiculaire au 1
+ctx.beginPath();
+ctx.moveTo(350,350);
+ctx.lineTo(525, 175);
+ctx.stroke();
+ctx.closePath;
+
+//trait 2
+ctx.beginPath();
+ctx.moveTo(430, 620);
+ctx.lineTo(620, 430);
+ctx.stroke();
+ctx.closePath;
+
+// trait perdendiculaire au 2
+ctx.beginPath();
+ctx.moveTo(350,350);
+ctx.lineTo(525, 525);
+ctx.stroke();
+ctx.closePath;
