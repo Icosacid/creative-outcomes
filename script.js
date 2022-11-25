@@ -72,6 +72,7 @@ ctx.fillStyle = gradient;
     ctx.fill();
     ctx.closePath;
 
+
 // trait 1 
 ctx.beginPath();
 ctx.moveTo(430,80);
@@ -99,3 +100,11 @@ ctx.moveTo(350,350);
 ctx.lineTo(525, 525);
 ctx.stroke();
 ctx.closePath;
+
+for (let i = 47; i < 100; i++) {
+  ctx.beginPath()
+  ctx.moveTo(i*7.5, 0)
+  ctx.lineTo (i*15, 359)
+  ctx.stroke()
+  ctx.closePath()
+}
