@@ -24,40 +24,66 @@ ctx.stroke()
 ctx.closePath()
 
 /*couleur de la ligne*/
-ctx.strokeStyle = "#9AC4FA"
+ctx.strokeStyle = "#9CB7F0"
 
 /*couleur pour remplir forme*/
-ctx.fillStyle = "#9AC4FA"
+ctx.fillStyle = "#9CB7F0"
 
 /*couleur bleu*/
 ctx.beginPath()
-ctx.arc(1000, 200, 20, 0, 2 * Math.PI, false)
+ctx.arc(1000, 200, 35, 0, 2 * Math.PI, false)
 ctx.fill()
 ctx.stroke()
 ctx.closePath()
 
 /*couleur de la ligne*/
-ctx.strokeStyle = "#FF9778"
+ctx.strokeStyle = "#E6B19A"
 
 /*couleur pour remplir forme*/
-ctx.fillStyle = "#FF9778"
+ctx.fillStyle = "#E6B19A"
 
 /*color rouge*/
 ctx.beginPath()
-ctx.arc(1000, 400, 20, 0, 2 * Math.PI, false)
+ctx.arc(1000, 400, 35, 0, 2 * Math.PI, false)
 ctx.fill()
 ctx.stroke()
 ctx.closePath()
 
 /*couleur de la ligne*/
-ctx.strokeStyle = "#C1FAC1"
+ctx.strokeStyle = "#93DAAA"
 
 /*couleur pour remplir forme*/
-ctx.fillStyle = "#C1FAC1"
+ctx.fillStyle = "#93DAAA"
 
 /*color vert*/
 ctx.beginPath()
-ctx.arc(900, 300, 20, 0, 2 * Math.PI, false)
+ctx.arc(900, 300, 35, 0, 2 * Math.PI, false)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+
+/*couleur de la ligne*/
+ctx.strokeStyle = "black"
+
+/*couleur pour remplir forme*/
+ctx.fillStyle = "black"
+
+/*troue palette*/
+ctx.beginPath()
+ctx.arc(1000, 300, 25, 0, 2 * Math.PI, false)
+ctx.fill()
+ctx.stroke()
+ctx.closePath()
+
+/*couleur de la ligne*/
+ctx.strokeStyle = "black"
+
+/*couleur pour remplir forme*/
+ctx.fillStyle = "black"
+
+/*troue palette*/
+ctx.beginPath()
+ctx.arc(1130, 250, 50, 0, 2 * Math.PI, false)
 ctx.fill()
 ctx.stroke()
 ctx.closePath()
@@ -66,6 +92,7 @@ ctx.closePath()
 ctx.strokeStyle = "#ffffe0"; //couleur contour toile
 ctx.fillStyle = '#ffffe0'; //Couleur fond de toile
 ctx.fillRect(200, 100, 600, 400);
+
 
 
 
