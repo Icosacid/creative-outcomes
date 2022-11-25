@@ -2,8 +2,8 @@ let myCanvas
 myCanvas = document.
 getElementsByTagName('canvas')[0]
 
-myCanvas.width = window.innerWidth
-myCanvas.height = window.innerHeight
+myCanvas.width = 700;
+myCanvas.height = 700;
 
 let ctx = myCanvas.getContext('2d')
 
