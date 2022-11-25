@@ -9,7 +9,29 @@ let w = myCanvas.width,
     centerX = w / 2,
     centerY = h / 2
 
+//Roselyne 
+console.log("hello")
 
+function curve() {
+    ctx.strokeStyle = "#FBC02D"
+    ctx.lineWidth = 5
+    ctx.fillStyle = "#FBC02D"
+
+    ctx.beginPath()
+    ctx.moveTo(0, 0)
+    ctx.quadraticCurveTo(500, 25, 100, 400);
+    ctx.quadraticCurveTo(500, 40, 0, 100);
+    ctx.closePath()
+    ctx.stroke()
+    ctx.fill()
+
+    ctx.beginPath()
+    ctx.moveTo(0, 700)
+    ctx.quadraticCurveTo(-280, 950, 150, 500);
+    ctx.closePath()
+    ctx.stroke()
+    ctx.fill()
+    curve()
 
 cercles();
 
