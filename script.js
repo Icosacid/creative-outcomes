@@ -17,6 +17,7 @@ function curve() {
     ctx.lineWidth = 5
     ctx.fillStyle = "#0D47A1"
 
+<<<<<<< Updated upstream
     ctx.beginPath()
     ctx.moveTo(0, 0)
     ctx.quadraticCurveTo(500, 25, 100, 400);
@@ -35,34 +36,44 @@ function curve() {
     
 }
 curve()
-cercles();
+
+=======
+createAllCercles();
+>>>>>>> Stashed changes
 
 // Cercles Marine
-function cercles() {
+function createAllCercles() {
 
-    var items = 84;
-    var r = 70;
-    var cercleSize = 0.125;
+    var items = 84
+    var r = 70
+    var cercleSize = 0.125
+    var currentItem = 0
 
     for(var i = 0; i < items; i++) {
     
         var x = centerX + r * Math.cos(2 * Math.PI * i / items);
         var y = centerY + r * Math.sin(2 * Math.PI * i / items);   
         
-        ctx.beginPath();
-        ctx.lineWidth="2";
+        drawDot(x, y, cercleSize);
+
+        if (currentItem <= 21) {
+            currentItem ++
+            cercleSize+= 0.125
+        }
+        else {
+            currentItem = 0
+            cercleSize = 0.125
+        }
+
+    }
+}
+
+
+
+
+function drawDot(x, y, cercleSize) {
+    ctx.beginPath();
         ctx.fillStyle="#FF4422"
         ctx.arc(x, y, cercleSize, 0, 2 * Math.PI);
         ctx.fill();
-
-        // changement de taille du cercle
-        console.log(cercleSize);
-        if (cercleSize <= 2.625) {
-            cercleSize+= 0.125;
-        }
-        else cercleSize = 0.125;
-        
-
-        
-    }
 }
