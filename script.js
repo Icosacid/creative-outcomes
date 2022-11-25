@@ -14,14 +14,16 @@ ctx.fillStyle = "white"
 ctx.globalCompositeOperation = 'lighter'
 ctx.linewidth = 1
 
-for (let i = 0; i <100; i++){
+for (let i = 47; i <100; i++){
     ctx.beginPath()
-    ctx.moveTo(0, i*15)
+    ctx.moveTo(0, i*7.5)
     ctx.lineTo(350, i*15)
     ctx.stroke()
     ctx.closePath()
-    }
-    
+}
+
+
+
 
  // Triangle plein
  ctx.beginPath();
