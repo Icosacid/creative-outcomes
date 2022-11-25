@@ -91,3 +91,16 @@ ctx.arc (1240, 300, 30, 0, 2 * Math.PI, false)
 ctx.fill ()
 ctx.stroke ()
 ctx.closePath ()
+
+//couleur
+ctx.strokeStyle= "white"
+
+//Boucle
+for (let i= 0; i < 8; i++) {
+  ctx.beginPath()
+  ctx.lineWidth="1"
+  ctx.arc(170, 300, i * 120, 0, 2 * Math.PI, false)
+  ctx.stroke()
+  ctx.closePath()
+
+ }
