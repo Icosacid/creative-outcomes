@@ -8,10 +8,12 @@ myCanvas.height = 700;
 let ctx = myCanvas.getContext('2d')
 
 ctx.strokeStyle = "white"
-ctx.fillStyle = "#F500C2"
 ctx.linewidth = 1
 
-/
+var gradient = ctx.createLinearGradient(350, 350, 350, 0);
+gradient.addColorStop(0, '#FF24C1');
+gradient.addColorStop(1, 'white');
+ctx.fillStyle = gradient;
 
 // coté droit du carré = LAURA
 
@@ -25,6 +27,12 @@ ctx.beginPath();
 
 
 // triangle bas
+//le style de remplissage
+    var gradient = ctx.createLinearGradient(350, 350, 350, 700);
+gradient.addColorStop(0, '#FF24C1');
+gradient.addColorStop(1, 'white');
+ctx.fillStyle = gradient;
+// la forme
 ctx.beginPath();
     ctx.moveTo(350, 350);
     ctx.lineTo(350, 700);
@@ -34,6 +42,13 @@ ctx.beginPath();
 
 
 // triangle du milieu (bas)
+
+// le style de remplissage
+var gradient = ctx.createLinearGradient(350, 350, 700, 350);
+gradient.addColorStop(0, '#FF24C1');
+gradient.addColorStop(1, 'white');
+ctx.fillStyle = gradient;
+// la forme
 ctx.beginPath();
     ctx.moveTo(350, 350);
     ctx.lineTo(700, 350);
@@ -43,6 +58,13 @@ ctx.beginPath();
 
 // triangle du milieu (haut)
 
+// le style de remplissage 
+var gradient = ctx.createLinearGradient(350, 350, 700, 350);
+gradient.addColorStop(0, '#FF24C1');
+gradient.addColorStop(1, 'white');
+ctx.fillStyle = gradient;
+
+// la forme
     ctx.beginPath();
     ctx.moveTo(350, 350);
     ctx.lineTo(700, 350);
