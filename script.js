@@ -64,7 +64,6 @@ function lines() {
 
 
 }
-
 lines()
 
 // --- variables globales de Marine ---
