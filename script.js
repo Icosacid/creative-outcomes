@@ -4,18 +4,18 @@ myCanvas.width = window.innerWidth
 myCanvas.height = window.innerHeight
 let ctx = myCanvas.getContext('2d')
 
+console.log(window.innerWidth)
 let w = myCanvas.width,
     h = myCanvas.height,
     centerX = w / 2,
     centerY = h / 2
 
 //Roselyne 
-console.log("hello")
 
 function curve() {
-    ctx.strokeStyle = "#FBC02D"
+    ctx.strokeStyle = "#0D47A1"
     ctx.lineWidth = 5
-    ctx.fillStyle = "#FBC02D"
+    ctx.fillStyle = "#0D47A1"
 
     ctx.beginPath()
     ctx.moveTo(0, 0)
@@ -25,12 +25,13 @@ function curve() {
     ctx.stroke()
     ctx.fill()
 
+    ctx.fillStyle = "#6200EA"
+    ctx.strokeStyle = "#6200EA"
     ctx.beginPath()
-    ctx.moveTo(0, 700)
-    ctx.quadraticCurveTo(-280, 950, 150, 500);
+    ctx.arc(1400, 700, 300, 0, 2 * Math.PI, false) 
     ctx.closePath()
-    ctx.stroke()
     ctx.fill()
+    ctx.stroke()
     
 }
 curve()
