@@ -2,8 +2,8 @@ let myCanvas;
 
 myCanvas = document.getElementsByTagName('canvas')[0]
 
-myCanvas.width = window.innerWidth
-myCanvas.height = window.innerHeight
+myCanvas.width = 700;
+myCanvas.height = 700;
 
 console.log (myCanvas)
 
@@ -16,33 +16,33 @@ ctx.linewidth = 1
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(307, 307);
- ctx.lineTo(307, 0);
- ctx.lineTo(250, 80);
+ ctx.moveTo(350, 350);
+ ctx.lineTo(350, 0);
+ ctx.lineTo(270, 80);
  ctx.fill();
  ctx.closePath();
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(307, 307);
- ctx.lineTo(0, 307);
- ctx.lineTo(80, 250);
+ ctx.moveTo(350, 350);
+ ctx.lineTo(0, 350);
+ ctx.lineTo(80, 270);
  ctx.fill();
  ctx.closePath();
 
  // Triangle plein
  ctx.beginPath();
- ctx.moveTo(307, 307);
- ctx.lineTo(0, 307);
- ctx.lineTo(80, 370);
+ ctx.moveTo(350, 350);
+ ctx.lineTo(0, 350);
+ ctx.lineTo(80, 430);
  ctx.fill();
  ctx.closePath();
 
 // Triangle plein
 ctx.beginPath();
-ctx.moveTo(307, 307);
-ctx.lineTo(307, 614);
-ctx.lineTo(250, 530);
+ctx.moveTo(350, 350);
+ctx.lineTo(350, 700);
+ctx.lineTo(270, 620);
 ctx.fill();
 ctx.closePath();
 
