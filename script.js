@@ -1,4 +1,4 @@
-/*balise canva*/
+//balise canva
 let myCanvas
 
 myCanvas = document.getElementsByTagName('canvas')[0]
@@ -90,3 +90,23 @@ ctx.arc (1240, 300, 30, 0, 2 * Math.PI, false)
 ctx.fill ()
 ctx.stroke ()
 ctx.closePath ()
+
+//couleur de l'étoile
+ctx.strokeStyle = "white"
+
+//couleur de l'étoile
+ctx.fillStyle = "white"
+
+//epaisseur de l'etoile
+ctx.lineWidth = 1
+
+
+// boucle dessiner des étoiles
+for (let i = 0; i < 100; i++) {
+    ctx.beginPath()
+    ctx.arc(100, i*50, 1, 0, 100 * Math.PI, false)
+    ctx.fill()
+    ctx.stroke()
+    ctx.closePath()
+    }
+    
